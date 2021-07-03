@@ -12,7 +12,7 @@ const linkStyles = {
 
 function Navbar({ setIsLoggedIn }) {
   const history = useHistory();
-
+  console.log("USEHISTORY is: ", history)
   function handleLogout() {
     setIsLoggedIn(false);
     history.push("/login");
